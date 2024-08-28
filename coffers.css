@@ -1,0 +1,49 @@
+*{
+    /* Isso dentro do * serve para reiniciar as configurações da página */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    /* Serve para tirar o sublinhado e padronizar a cor do texto */
+    text-decoration: none;
+    color: inherit;
+}
+/* root -> significa escopo global (precisa de : para chamar ele */
+:root{
+    --primary-color: #9ecefe;
+    --secondary-color: #980056;
+}
+body{
+    /* Informações de altura
+    100% -> significa a altura do pai
+    100vh -> preenche cem por cento da janela 
+     */
+    height: 100vh;
+    background-color: var(--primary-color); /* serve para chamar a cor do root */
+    display: flex;
+    flex-direction: column;
+    padding-inline: 64px;
+    font-family: "Righteous", sans-serif;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+header div{
+    display: flex;
+    gap: 24px;
+}
+header a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 16px; /*Distância entre os elementos */
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+header img{
+    height: 100px;
+}
